@@ -1,7 +1,7 @@
 # CS:GO Clantag Changer
 ClanTag Changer for CS:GO written in AutoIt.
 
-![ClanTag](https://github.com/kevinalberts/CSGO_Clantag_Changer/assets/79926312/cefa526f-aa1b-485d-9c58-9292fc9f37a6)
+![ClanTag](https://github.com/kevinalberts/CSGO_Clantag_Changer/assets/79926312/c32d6f53-728f-479e-8b6c-cbdedfdeda57)
 
 # What does this do?
 Calling ClanTag Changed function using ASM.
