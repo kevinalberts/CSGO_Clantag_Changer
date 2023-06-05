@@ -16,11 +16,12 @@ $dwSetClanTag = FindPatternX32($hProcess, "5356578BDA8BF9FF15........6A..8B", Fa
 $dwPage = "0x" & Hex(VirtualAllocEx($hProcess, 0, 0x64, $MEM_COMMIT, $PAGE_EXECUTE_READWRITE), 8)
 $lpTag = "0x" & Hex(VirtualAllocEx($hProcess, 0, 0x64, $MEM_COMMIT, $PAGE_EXECUTE_READWRITE), 8)
 $lpName = "0x" & Hex(VirtualAllocEx($hProcess, 0, 0x64, $MEM_COMMIT, $PAGE_EXECUTE_READWRITE), 8)
-;~ In here I didn't make allocating stuff in While Loop. Because if you do that, your game is gonna crash if you won't put Sleep. So we're allocating once
-;~ because we're gonna use it until you terminate the script. So we can call the function without Sleep.
+;~ In here I didn't make allocating stuff in While Loop. Because if you do that, your game is gonna crash if you keep spamming Alloc. So we're allocating once
+;~ because we're gonna use it until you terminate the script.
 
 While 1 ;~ Loop starts
-	ClanTag("Github.com/KevinAlberts", "bruhhh") ;~ Parameters: Clan tag, Clan name
+	ClanTag("1337", "bruhhh") ;~ Parameters: Clan tag, Clan name
+	Sleep(100)
 WEnd ;~ Loop ends and starts again.
 
 Func ClanTag($sTag, $sName) ;~ Clantag function starts.
